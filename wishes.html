@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#fff8f5"><meta name="description" content="A magical, interactive birthday celebration for Maheen — 16 November 2026."><title>Wishes • Maheen’s Birthday Universe</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="style.css"></head><body class="page-wishes" data-page="wishes"><a class="skip-link" href="#main-content">Skip to content</a>
+<div id="birthday-sky" class="birthday-sky" aria-hidden="true"></div>
+<canvas id="party-canvas" aria-hidden="true"></canvas>
+<div class="site-frame">
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Maheen's birthday universe home">
+    <span class="brand-icon">M<span class="brand-sparkle">✦</span></span>
+    <span class="brand-wordmark"><strong>For Maheen</strong><small>A little world of wishes</small></span>
+  </a>
+  <nav id="main-nav" class="main-nav" aria-label="Birthday pages"><a href="index.html" class="nav-link" data-page="home"><span class="nav-index">01</span>Welcome</a><a href="wishes.html" class="nav-link" data-page="wishes"><span class="nav-index">02</span>Wishes</a><a href="cake.html" class="nav-link" data-page="cake"><span class="nav-index">03</span>Cake</a><a href="surprises.html" class="nav-link" data-page="surprises"><span class="nav-index">04</span>Surprises</a><a href="finale.html" class="nav-link" data-page="finale"><span class="nav-index">05</span>Finale</a></nav>
+  <div class="header-actions">
+    <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Turn on birthday music"><span aria-hidden="true" class="music-symbol">♫</span><span class="music-text">Tap for music</span></button>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main id="main-content" class="main-content inner-page">
+  <section class="page-intro" aria-labelledby="wishes-heading">
+    <span class="section-crumb">CHAPTER 02 <span aria-hidden="true">/</span> A LITTLE LOVE</span>
+    <div class="intro-symbol intro-symbol-heart" aria-hidden="true">♡</div>
+    <h1 id="wishes-heading">A garden of <em>good wishes.</em></h1>
+    <p>Because someone as special as you deserves more than one birthday wish. Tap the little letters and see what's inside.</p>
+  </section>
+  <section class="wishes-section" aria-labelledby="letters-heading">
+    <div class="subsection-head"><h2 id="letters-heading">Four tiny notes, just for you <span aria-hidden="true">✦</span></h2><span>Tap a card to open it</span></div>
+    <div class="wish-grid">
+      <button type="button" class="wish-envelope wish-one" aria-expanded="false"><span class="wish-envelope-inner">
+        <span class="wish-front"><span class="wish-icon">✿</span><span class="wish-tag">WISH No. 01</span><span class="wish-title">For your happiest days</span><span class="wish-hint">tap to unfold <span aria-hidden="true">↗</span></span></span>
+        <span class="wish-back"><span class="wish-back-icon">✿</span><strong>For your happiest days</strong><span>May your days be full of laughter that catches you by surprise, people who feel like sunshine, and moments worth remembering.</span><span class="wish-hint">tap to close ↶</span></span>
+      </span></button>
+      <button type="button" class="wish-envelope wish-two" aria-expanded="false"><span class="wish-envelope-inner">
+        <span class="wish-front"><span class="wish-icon">☾</span><span class="wish-tag">WISH No. 02</span><span class="wish-title">For your quiet moments</span><span class="wish-hint">tap to unfold <span aria-hidden="true">↗</span></span></span>
+        <span class="wish-back"><span class="wish-back-icon">☾</span><strong>For your quiet moments</strong><span>May you always find a little peace when you need it, comfort in the small things, and reasons to feel proud of how far you've come.</span><span class="wish-hint">tap to close ↶</span></span>
+      </span></button>
+      <button type="button" class="wish-envelope wish-three" aria-expanded="false"><span class="wish-envelope-inner">
+        <span class="wish-front"><span class="wish-icon">✧</span><span class="wish-tag">WISH No. 03</span><span class="wish-title">For your big dreams</span><span class="wish-hint">tap to unfold <span aria-hidden="true">↗</span></span></span>
+        <span class="wish-back"><span class="wish-back-icon">✧</span><strong>For your big dreams</strong><span>May you have the courage to chase what excites you, the luck to find new doors, and all the magic of becoming who you want to be.</span><span class="wish-hint">tap to close ↶</span></span>
+      </span></button>
+      <button type="button" class="wish-envelope wish-four" aria-expanded="false"><span class="wish-envelope-inner">
+        <span class="wish-front"><span class="wish-icon">♥</span><span class="wish-tag">WISH No. 04</span><span class="wish-title">For every tomorrow</span><span class="wish-hint">tap to unfold <span aria-hidden="true">↗</span></span></span>
+        <span class="wish-back"><span class="wish-back-icon">♥</span><strong>For every tomorrow</strong><span>May this new chapter be kind to you, full of lovely surprises and beautiful beginnings. Happy Birthday, Maheen!</span><span class="wish-hint">tap to close ↶</span></span>
+      </span></button>
+    </div>
+  </section>
+  <section class="wish-station" aria-labelledby="wish-station-heading">
+    <div class="wish-writing-panel glass-panel"><p class="eyebrow">A LITTLE SOMETHING EXTRA</p><h2 id="wish-station-heading">Write a wish for <em>Maheen.</em></h2><p>Leave your own little note in the wish jar. It will stay in this browser until you remove it.</p>
+      <form id="wish-form"><label for="wish-message">YOUR BIRTHDAY NOTE</label><textarea id="wish-message" maxlength="180" rows="5" placeholder="Dear Maheen, I wish you…" required></textarea><div class="form-under"><span><span id="wish-char-count">0</span> / 180 characters</span><button type="submit" class="btn btn-primary">Add my wish <span aria-hidden="true">♡</span></button></div></form>
+      <p id="wish-feedback" class="form-feedback" aria-live="polite"></p>
+    </div>
+    <div class="wish-jar-panel glass-panel"><div class="jar-heading"><div><p class="eyebrow">COLLECTED MAGIC</p><h2>Your little wish jar</h2></div><span class="jar-top-icon" aria-hidden="true">✦</span></div><p id="wish-total" class="jar-total">0 wishes saved in this browser</p>
+      <div class="jar-icon" aria-hidden="true"><span>✦</span><span>♥</span><span>✧</span></div>
+      <p id="wish-empty" class="empty-state">The jar is waiting for its first wish. ✨</p><ul id="wish-list" class="wish-list" aria-label="Your saved birthday wishes"></ul>
+    </div>
+  </section>
+  <div class="page-end-nav"><a href="index.html" class="text-link back-link"><span aria-hidden="true">←</span> Back to welcome</a><span>Make a wish. Then make it sweet.</span><a href="cake.html" class="btn btn-primary">Next: the cake <span aria-hidden="true">→</span></a></div>
+</main>
+<footer class="site-footer">
+  <span><span class="footer-flower">✿</span> A little corner of the universe, made just for Maheen</span>
+  <span>16 NOV 2026 <span aria-hidden="true">✦</span></span>
+</footer>
+</div>
+<audio id="birthday-bgm" src="birthday-bgm.mp3" preload="auto" autoplay loop playsinline aria-hidden="true"></audio>
+<script src="site.js" defer></script>
+</body></html>

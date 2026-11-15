@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Blush pink M birthday monogram">
+  <rect width="64" height="64" rx="22" fill="#f1b6ca"/>
+  <circle cx="32" cy="32" r="26" fill="#fff9f5" fill-opacity=".45" stroke="#fff9f5" stroke-width="1.5"/>
+  <text x="28" y="45" text-anchor="middle" font-family="Georgia,serif" font-size="43" font-style="italic" fill="#9d577c">M</text>
+  <path d="M48 9l2.2 5.7L56 17l-5.8 2.3L48 25l-2.2-5.7L40 17l5.8-2.3Z" fill="#fff7e5"/>
+</svg>
