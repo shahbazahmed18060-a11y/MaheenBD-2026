@@ -305,6 +305,7 @@ if (document.body.dataset.page === "wishes") {
   const textarea = document.getElementById('wish-message');
   const list = document.getElementById('wish-list');
   const count = document.getElementById('wish-char-count');
+  count.textContent = String(textarea.value.length);
   const empty = document.getElementById('wish-empty');
   const total = document.getElementById('wish-total');
   const toast = document.getElementById('wish-feedback');
